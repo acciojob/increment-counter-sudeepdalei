@@ -8,6 +8,36 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<!DOCTYPE html>
+<html>
+<head>
+  <title>Increment Counter</title>
+</head>
+<body>
+
+  <!-- Counter -->
+  <p id="counter">0</p>
+
+  <!-- Button -->
+  <button id="incrementBtn">Increment</button>
+
+  <script>
+    const counter = document.getElementById("counter");
+    const button = document.getElementById("incrementBtn");
+
+    button.addEventListener("click", function () {
+      let currentValue = Number(counter.textContent);
+
+      // Show alert BEFORE increment
+      alert(currentValue);
+
+      // Increment after alert
+      counter.textContent = currentValue + 1;
+    });
+  </script>
+
+</body>
+</html>
     <script type="text/javascript" src="./script.js">
 </script>
 
